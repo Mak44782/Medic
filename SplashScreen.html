@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Splash Screen </title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #5789f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            position: relative;
+            color: #fff;
+        }
+
+        .splash-content {
+            text-align: center;
+            margin-top: -5px;
+        }
+
+        .logo-left {
+            position: static;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        .spinner {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            border: 5px solid #ffffff;
+            border-radius: 50%;
+            border-top: 5px solid #000000;
+            width: 75px;
+            height: 75px;
+            -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+        }
+
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <img class="logo-left" src="C:/Users/armaa/Documents/WebsiteLogo.PNG" alt="Logo" >
+    <div class="splash-content">
+
+        <h1>Medic</h1>
+        <p> 
+            <strong>Website Mission:</strong><br> ------------------------------------ <br>
+            "At our core, we as a team are fully dedicated to ensuring healthy lives and promoting well-being for all individuals, regardless of age or gender. <br>
+            Through our unwavering commitment to accessibility and excellence, our aim is to empower individuals to lead fulfilling lives by providing comprehensive resources & compassionate support. <br>
+            Our mission is to foster a world where everyone has the opportunity to thrive physically & mentally."
+        </p>
+        <p>
+            <strong>Group Members:</strong><br> ------------------------------------ <br>
+            ~ Arman ~<br>
+            ~ Faraaz ~<br>
+            ~ Eesa ~<br>
+            ~ Marwan ~<br>
+        </p>
+
+    </div>
+    <div class="spinner"></div>
+
+
+<script>
+
+        setTimeout(function() {
+            window.location.href = "homepage link";
+        }, 5000);
+
+</script>
+
+
+</body>
+</html>
