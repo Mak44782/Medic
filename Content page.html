@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Teas and Beverages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: skyblue; /* Background color */
+        }
+        header {
+            background-color: darkblue; /* Title background color */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: darkblue; /* Navigation bar background color */
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+        section {
+            padding: 20px;
+        }
+        h2 {
+            color: black; /* Title color */
+        }
+        p {
+            line-height: 1.6;
+        }
+        .goto-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #156133; /* Button background color */
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+        }
+        #logo {
+            position: absolute;
+            top: 2px;
+            right: 1px;
+            width: 140px;
+            height: 140px;
+        
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo -->
+    <img src="logo health.png" alt="Healthy Logo" id="logo">
+
+    <header>
+        <h1>Wellness Teas and Beverages</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#types">Types</a></li>
+            <li><a href="#how-to-enjoy">How to Enjoy</a></li>
+            <li><a href="#recipes">Recipes</a></li>
+        </ul>
+    </nav>
+
+    <section id="benefits">
+        <h2>Benefits of Wellness Teas and Beverages</h2>
+        <p>Wellness teas and beverages offer numerous health benefits:</p>
+        <ul>
+            <li><strong>Boosting Immune System:</strong> Many wellness teas, such as green tea and echinacea tea, contain antioxidants and vitamins that help strengthen the immune system, reducing the risk of infections.</li>
+            <li><strong>Improving Digestion:</strong> Herbal teas like peppermint tea and ginger tea can aid digestion by reducing bloating, relieving indigestion, and promoting healthy bowel movements.</li>
+            <li><strong>Reducing Stress and Anxiety:</strong> Chamomile tea and lavender tea are known for their calming properties, helping to reduce stress and anxiety levels, promote relaxation, and improve sleep quality.</li>
+            <li><strong>Detoxifying the Body:</strong> Teas like dandelion root tea and detox blends containing ingredients like green tea, lemon, and ginger help cleanse the body by flushing out toxins and supporting liver function.</li>
+            <li><strong>Promoting Hydration:</strong> Herbal teas and fruit-infused water provide hydration while offering additional health benefits without the added sugars and artificial ingredients often found in sugary beverages.</li>
+            <li><strong>Supporting Weight Management:</strong> Certain teas, such as oolong tea and pu-erh tea, have been associated with boosting metabolism and aiding in weight loss when combined with a healthy diet and regular exercise.</li>
+        </ul>
+    </section>
+
+    <section id="types">
+        <h2>Types of Wellness Teas and Beverages</h2>
+        <p>There are various types of wellness teas and beverages, such as:</p>
+        <ul>
+            <li>Herbal teas</li>
+            <li>Green teas</li>
+            <li>Matcha</li>
+            <li>Detox drinks</li>
+            <li>Infusions with spices like turmeric or ginger</li>
+        </ul>
+    </section>
+
+    <section id="how-to-enjoy">
+        <h2>How to Enjoy Wellness Teas and Beverages</h2>
+        <p>To fully enjoy wellness teas and beverages, follow these tips:</p>
+        <ul>
+            <li>Brew tea at the right temperature and time</li>
+            <li>Use high-quality ingredients</li>
+            <li>Experiment with different flavors and combinations</li>
+            <li>Enjoy slowly and mindfully</li>
+            <li>Add natural sweeteners like honey or stevia if desired</li>
+        </ul>
+    </section>
+
+    <section id="recipes">
+        <h2>Wellness Tea Recipes</h2>
+        <p>Here are some simple recipes to try:</p>
+        <ol>
+            <li><strong>Immune-Boosting Tea:</strong> Mix hot water with fresh lemon juice, honey, and a dash of cayenne pepper.</li>
+            <li><strong>Relaxation Blend:</strong> Steep chamomile tea with lavender buds for a calming effect.</li>
+            <li><strong>Detox Drink:</strong> Combine green tea with sliced cucumber, mint leaves, and a squeeze of lime.</li>
+            <li><strong>Anti-Inflammatory Elixir:</strong> Brew turmeric tea with ginger slices and a sprinkle of black pepper for better absorption.</li>
+        </ol>
+    </section>
+
+    <button class="goto-top" onclick="goToTop()">Go to Top</button>
+
+    <script>
+        // Function to scroll to the top of the page
+        function goToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Show 'Go to Top' button when scrolling down
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.querySelector('.goto-top').style.display = "block";
+            } else {
+                document.querySelector('.goto-top').style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
